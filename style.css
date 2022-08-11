@@ -30,3 +30,42 @@ li {
 li:hover {
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
+
+.more-btn {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.more-btn-burger {
+  width: 50px;
+  height: 1px;
+  background: white;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out;
+}
+
+.more-btn-burger::before,
+.more-btn-burger::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  background: white;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out;
+}
+
+.more-btn-burger::before {
+  transform: translateY(-16px);
+}
+
+.more-btn-burger::after {
+  transform: translateY(16px);
+}
