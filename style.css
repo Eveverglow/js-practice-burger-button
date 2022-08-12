@@ -94,8 +94,23 @@ li:hover {
   height: 60px;
 }
 
-.line {
+.line-one,
+.line-two,
+.line-three {
   width: 50px;
   height: 1px;
   background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.line-one-open {
+  transform: rotate(45deg);
+}
+
+.line-two-open {
+  display: none;
+}
+
+.line-three-open {
+  transform: rotate(-45deg);
 }
