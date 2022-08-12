@@ -31,59 +31,7 @@ li:hover {
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
-.more-btn {
-  margin-left: 60px;
-  margin-right: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  width: 60px;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-}
-
-.more-btn-burger {
-  width: 50px;
-  height: 1px;
-  background: white;
-  border-radius: 3px;
-  transition: all 0.5s ease-in-out;
-}
-
-.more-btn-burger::before,
-.more-btn-burger::after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 1px;
-  background: white;
-  border-radius: 3px;
-  transition: all 0.5s ease-in-out;
-}
-
-.more-btn-burger::before {
-  transform: translateY(-16px);
-}
-
-.more-btn-burger::after {
-  transform: translateY(16px);
-}
-
 /* animation */
-
-.more-btn .more-btn-burger {
-  transform: translateX(-30px);
-  background: transparent;
-}
-
-.more-btn.open .more-btn-burger::before {
-  transform: rotate(45deg) translate(0px);
-}
-
-.more-btn.open .more-btn-burger::after {
-  transform: rotate(-45deg) translate(0px);
-}
 
 .menu-btn-one {
   display: flex;
@@ -94,23 +42,21 @@ li:hover {
   height: 60px;
 }
 
-.line-one,
-.line-two,
-.line-three {
+.line {
   width: 50px;
   height: 1px;
   background-color: white;
   transition: all 0.5s ease-in-out;
 }
 
-.line-one-open {
+.line-one.open {
   transform: rotate(45deg);
 }
 
-.line-two-open {
-  display: none;
+.line-two.open {
+  opacity: 0;
 }
 
-.line-three-open {
+.line-three.open {
   transform: rotate(-45deg);
 }
