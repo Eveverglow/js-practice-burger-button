@@ -9,3 +9,15 @@ menuButton.addEventListener("click", () => {
     menuOpen = false;
   }
 });
+
+const buttonOne = document.querySelector("menu-btn-one");
+let btnOpen = false;
+buttonOne.addEventListener("click", () => {
+  if (!btnOpen) {
+    buttonOne.classList.add("open");
+    btnOpen = true;
+  } else {
+    buttonOne.classList.remove("open");
+    btnOpen = false;
+  }
+});
