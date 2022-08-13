@@ -50,10 +50,24 @@ li:hover {
   height: 1px;
   background-color: white;
   transition: all 0.5s ease-in-out;
+  position: relative;
+}
+
+.line-one {
+  top: 0;
+}
+
+.line-two {
+  opacity: 1;
+}
+
+.line-three {
+  top: 0;
 }
 
 .line-one.open {
-  transform: rotate(45deg) translateY(20px) translateX(8px);
+  transform: rotate(45deg);
+  top: 20px;
 }
 
 .line-two.open {
@@ -61,7 +75,8 @@ li:hover {
 }
 
 .line-three.open {
-  transform: rotate(-45deg) translateY(-20px) translateX(8px);
+  transform: rotate(-45deg);
+  top: -20px;
 }
 
 .menu-box {
