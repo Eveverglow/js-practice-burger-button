@@ -206,6 +206,16 @@ button:hover {
   display: flex;
 }
 
-.modal-block.close {
-  display: none;
+.container {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  background-color: #143d59;
+  width: 300px;
+  height: 400px;
 }

@@ -19,5 +19,5 @@ button.addEventListener("click", function () {
 });
 
 modalClosed.addEventListener("click", function () {
-  modal.classList.toggle("close");
+  modal.classList.toggle("open");
 });
