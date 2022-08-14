@@ -6,8 +6,9 @@ body {
 header {
   position: fixed;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   width: 100%;
   height: 80px;
   background-color: #143d59 !important;
@@ -30,7 +31,7 @@ li {
 }
 
 li:hover {
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
 }
 
 /* animation */
@@ -100,4 +101,19 @@ li:hover {
 
 .menu-box.open {
   right: 0px;
+}
+
+.menu-bloc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.login-button {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.5s ease-in-out;
+  list-style: none;
+  color: white;
+  text-transform: uppercase;
 }
