@@ -113,7 +113,7 @@ li:hover {
   margin-left: 20px;
 }
 
-.login-btn {
+.modal-btn {
   font-size: 20px;
   width: 120px;
   height: 50px;
@@ -126,11 +126,86 @@ li:hover {
   cursor: pointer;
 }
 
-.login-btn:hover {
+.modal-btn:hover {
   text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
 }
 
-.login-button:hover {
-  border-color: #f4b41a !important;
-  border-width: 1px !important;
+.modal-block {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(20, 61, 89, 0.4);
+}
+
+.modal-block-container {
+  display: flex;
+  background-color: #f4b41a;
+  padding: 20px 20px 30px 20px;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-between;
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  width: 330px;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%) translateY(50%);
+}
+
+h2 {
+  margin-top: 0px;
+  color: #143d59;
+  text-decoration: solid;
+}
+.remember-me-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#username,
+#password {
+  font-family: "Montserrat", sans-serif;
+  color: #143d59;
+}
+input[type="text"] {
+  border: none;
+  background-color: #f4b41a;
+  border-bottom: #143d59 1px solid;
+}
+input[type="text"]:focus {
+  outline: none;
+  background-color: #f4b41a;
+}
+
+button {
+  background-color: #143d59;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  width: 80px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+}
+
+.checkbox-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-block.open {
+  display: flex;
+}
+
+.modal-block.close {
+  display: none;
 }
