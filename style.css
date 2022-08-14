@@ -110,10 +110,27 @@ li:hover {
 }
 
 .login-button {
+  margin-left: 20px;
+}
+
+.login-btn {
   font-size: 20px;
+  width: 120px;
+  height: 50px;
   font-family: "Montserrat", sans-serif;
-  transition: all 0.5s ease-in-out;
   list-style: none;
   color: white;
+  background-color: #143d59;
   text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+}
+
+.login-button:hover {
+  border-color: #f4b41a !important;
+  border-width: 1px !important;
 }
