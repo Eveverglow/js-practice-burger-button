@@ -215,7 +215,55 @@ button:hover {
 }
 
 .card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   background-color: #143d59;
   width: 300px;
   height: 400px;
+}
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 200;
+}
+
+.image {
+  width: 300px;
+  height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+.carousel {
+  width: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.carousel-button {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: rgba(20, 61, 89, 0.4);
+  border-radius: 50%;
+}
+.candle-one {
+  background-image: url(./assets/candle-blue-three.jpg);
+  background-size: cover;
+}
+
+.candle-two {
+  background-image: url(./assets/candle-wine-two.jpg);
+  background-size: cover;
+}
+
+.candle-three {
+  background-image: url(./assets/candle-orange-three.jpg);
+  background-size: cover;
 }
