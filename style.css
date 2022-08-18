@@ -240,18 +240,22 @@ h3 {
 }
 
 .carousel {
-  width: 40px;
+  width: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.carousel-button {
+.carousel-button-one,
+.carousel-button-two,
+.carousel-button-three {
   width: 10px;
   height: 10px;
   display: inline-block;
-  background: rgba(20, 61, 89, 0.4);
+  background: rgba(20, 61, 89, 0.2);
   border-radius: 50%;
+  z-index: 100;
+  transition: all 0.5s ease-in-out;
 }
 .candle-one {
   background-image: url(./assets/candle-blue-three.jpg);
@@ -266,4 +270,34 @@ h3 {
 .candle-three {
   background-image: url(./assets/candle-orange-three.jpg);
   background-size: cover;
+}
+
+.carousel-button-one:hover,
+.carousel-button-two:hover,
+.carousel-button-three:hover {
+  background: rgba(20, 61, 89, 0.5);
+}
+
+.image-blue-two {
+  position: absolute;
+  z-index: -4;
+  transition: all 0.5s ease-in-out;
+}
+
+.image-blue-three {
+  position: absolute;
+  z-index: -3;
+  transition: all 0.5s ease-in-out;
+}
+
+.image-blue-two.open {
+  z-index: 0;
+}
+
+.candle-one.open {
+  z-index: 0;
+}
+
+.image-blue-three.open {
+  z-index: 0;
 }

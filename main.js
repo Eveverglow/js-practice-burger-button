@@ -21,3 +21,23 @@ button.addEventListener("click", function () {
 modalClosed.addEventListener("click", function () {
   modal.classList.toggle("open");
 });
+
+const blueButtonOne = document.querySelector(".carousel-button-one");
+const blueButtonTwo = document.querySelector(".carousel-button-two");
+const blueButtonThree = document.querySelector(".carousel-button-three");
+
+const blueImageOne = document.querySelector(".candle-one");
+const blueImageTwo = document.querySelector(".image-blue-two");
+const blueImageThree = document.querySelector(".image-blue-three");
+
+blueButtonOne.addEventListener("click", function () {
+  blueImageTwo.classList.toggle("open");
+});
+
+blueButtonTwo.addEventListener("click", function () {
+  blueImageOne.classList.toggle("open");
+});
+
+blueButtonThree.addEventListener("click", function () {
+  blueImageThree.classList.toggle("open");
+});
